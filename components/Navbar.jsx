@@ -57,16 +57,16 @@ const Navbar = () => {
 	return (
 		<header className="header navbar-expand-lg" tw="exclude">
   <div className="t-global">
-      <div className="container-lg">
+      {/* <div className="container-lg">
         <a href="http://www.token2049.com/"><span className="arrow">← </span>TOKEN2049 GLOBAL</a>
-      </div>
+      </div> */}
     </div>
-    <div className="main">
-      <div className="container-lg">
+    <div className="main py-[28px]">
+      <div className="container-lg m-0 w-full px-20 nav-container-wrapper" style={{maxWidth: "none"}}>
         <div className="menu_dv">
           <div className="header-left">
             <a  href="https://www.dubai.token2049.com">
-              <img src='/Token-logo.png' alt="Token2049" />
+              <img src='/SuperAI-nav-logo.png' alt="SuperAI" />
             </a>
           </div>
 
@@ -81,26 +81,17 @@ const Navbar = () => {
             <ul className="navbar-nav">
               <li className="nav-item onlymb"><a href="https://www.dubai.token2049.com/tickets" className="nav-link">TICKETS</a></li>
               <li className="nav-item"><a href="https://www.dubai.token2049.com/speakers" className="nav-link">SPEAKERS</a></li>
-              {/* <li className="nav-item"><a href="https://www.dubai.token2049.com/agenda" className="nav-link">SIDE EVENTS</a></li> */}
-              {/* <!-- <li className="nav-item age-nda dropdown">
-                   <div className="agenda_new"> <span className="formbh" onclick="myfunction()" id="formbh"></span>
-                <a href="https://www.asia.token2049.com/agenda" className="nav-link">AGENDA</a></div>
-                  <div className="dropdown-content hide" id="dropdown-content">
-                    <a href="https://www.asia.token2049.com/agenda">OKX MAINSTAGE</a>
-                    <a href="https://www.asia.token2049.com/stage-2">STAGE 2</a>
-                    <a href="https://www.asia.token2049.com/kucoin-stage">KUCOIN STAGE</a>
-                  </div>
-              </li> --> */}
-              <li className="nav-item">
-                <a href="https://www.dubai.token2049.com/partners" className="nav-link md:-ml-2">PARTNERS</a>
+              <li className="nav-item ml-6">
+                <a href="https://www.dubai.token2049.com/partners" className="nav-link">AGENDA</a>
               </li>
-              <li className="nav-item">
-                <a href="https://www.dubai.token2049.com/travel" className="nav-link">TRAVEL</a>
+              <li className="nav-item ml-6">
+                <a href="https://www.dubai.token2049.com/travel" className="nav-link">PARTNERS</a>
               </li>
-              <li className="nav-item md:-ml-[26px]">
-                <a href="/" className="nav-link side-event-active-link">SIDE EVENTS</a>
+              <li className="nav-item ml-6">
+                <a href="/" className="nav-link ">TRAVEL</a>
+                {/* side-event-active-link */}
               </li>
-               <li className="nav-item">
+               <li className="nav-item ml-6">
                 {/* <a href="https://www.dubai.token2049.com/travel" className="nav-link">SIDE EVENTS</a> */}
               </li>
               <div className="nav-item exhibt heder_btn">
