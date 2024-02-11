@@ -1,7 +1,7 @@
 const HeroSection = () => {
     return (  
         <div className="ban-ner">
-            {/* <div className="header-fix-bg"></div> */}
+            <div className="header-fix-bg"></div>
             <div className="inner-img">
                 <div className="container">
                     <div className="inner-text">
