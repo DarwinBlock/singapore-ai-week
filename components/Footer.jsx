@@ -5,7 +5,7 @@ const Footer = () => {
           <div className="flex lg:flex-row flex-col w-full max-w-[1920px] justify-between px-6 md:px-16 xl:px-24 2xl:px-32 py-10">
             <div className="flex lg:justify-normal justify-between">
                 <a className="lg:block hidden" href="https://www.superai.com/">
-                  <img className="lg:block hidden" width={300} src='/footer_superai.png' alt="SuperAI" />
+                  <img className="lg:block hidden" width={300} src='/superai_footer.png' alt="SuperAI" />
                 </a>
                 <div className="flex flex-col md:text-base text-sm font-lassriet space-y-1 lg:ml-16">
                   <a href="https://www.superai.com/speakers" target="blank" className="uppercase no-underline text-white">
@@ -59,7 +59,7 @@ const Footer = () => {
               </div>
 
               <a className="lg:hidden block" href="https://www.superai.com/">
-                <img className="lg:hidden block lg:mt-0 mt-6" width={180} src='/footer_superai.png' alt="SuperAI" />
+                <img className="lg:hidden block lg:mt-0 mt-6" width={180} src='/superai_footer.png' alt="SuperAI" />
               </a>
 
               <div className="flex space-x-5 lg:self-end lg:mt-auto mt-6">
