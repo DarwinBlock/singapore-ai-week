@@ -17,10 +17,10 @@ const EventCard = ({
 		<div className={isFeatured ? "p-1 featured-card-content-wrapper rounded-lg flex flex-col bg-[#410BB9]" : ""}>
 			{isFeatured && 
 				<div className="my-2 px-4 flex w-full justify-between items-center">
-					<p className="font-semibold m-0 font-primary text-white uppercase">Featured Event</p>
+					<p className="font-lassriet m-0 text-white uppercase">Featured Event</p>
 					<Tooltip
 						labelText={<i className="text-white text-lg fa-solid fa-circle-info"></i>}
-						message={"This is a TOKEN2049 Week featured event. Email us at community@token2049 to upgrade your side event to featured event."}
+						message={"This is a SuperAI Week featured event. Email us at community@superai.com to upgrade your side event to featured event."}
 					/>
 				</div>
 			}

@@ -146,6 +146,9 @@ module.exports = {
 				tertiary: ["Roboto", "sans-serif"],
 				plaster: ["Plaster", "sans-serif"],
 				ter2: ["Manrope", "sans-serif"],
+				lassrietL: ["LarssietLight", "sans-serif"],
+				lassriet: ["Larssiet", "sans-serif"],
+				lassrietB: ["LarssietBold", "sans-serif"],
 			},
 			fontSize: {
 				countdownHeroMobileHeading: "clamp(2rem, -0.5rem + 12.5vw, 2.5rem)",

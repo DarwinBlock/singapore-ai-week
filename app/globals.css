@@ -80,8 +80,8 @@ body {
 	width: 100%;
 	padding-left: 0px;
 	/* height: 120 114px; */
-	background: rgba(255, 255, 255, 0.96);
-	position: fixed;
+	background: rgba(255, 255, 255, 0);
+	position: absolute;
 	z-index: 3;
 }
 .t-events .first-div .main-heading {
@@ -117,7 +117,7 @@ body {
 	border-radius: 0px;
 	display: flex;
 	align-items: center;
-	background: #fafafa;
+	background: #EBEAEA;
 	min-height: 140px;
 }
 .t-events .c-hack .e-divs {
@@ -306,7 +306,7 @@ div.t-events_in .e-hack .e-divs div#name-div ul li div .chain-img {
 	width: 100%;
 	background: url(/subscribe-bg.png) no-repeat top left;
 	background-position: 122px 0px;
-	min-height: 225px;
+	height: 225px;
 	align-items: flex-start;
 	margin: 100px 0px 0px;
 	background-size: 385px 222px;
@@ -318,8 +318,8 @@ div.t-events_in .e-hack .e-divs div#name-div ul li div .chain-img {
 	width: 60% !important;
 }
 .alldata .subs .subs-inpt input.email {
-	width: 63%;
-	font-family: "Lato";
+	width: 75%;
+	font-family: "LarssietLight";
 	font-weight: 400;
 	margin-right: 4px;
 }
@@ -358,7 +358,7 @@ div.ptm {
 }
 
 div.subs_section {
-	max-width: 1525px;
+	/* max-width: 1525px; */
 	margin: 0 auto;
 }
 div.t-events div.c-hack div.card-style {
@@ -464,12 +464,12 @@ footer.bg div ul {
 	padding: 0;
 }
 footer.bg div p {
-	font-size: 10px;
+	/* font-size: 10px; */
 	margin: 0;
-	font-weight: 600;
-	color: #000000;
+	/* font-weight: 600; */
+	/* color: #000000; */
 	letter-spacing: 0.5px;
-	font-family: "OpenSauceTwoSemiBold", sans-serif;
+	/* font-family: "OpenSauceTwoSemiBold", sans-serif; */
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -1052,7 +1052,7 @@ body div.webui-popover .arrow {
 	width: 100%;
 }
 .ban-ner .inner-img {
-	height: 580px;
+	height: 674px;
 	display: flex;
 	width: 100%;
 	background-image: url("/SuperAI-Week-Header.png");
@@ -1217,24 +1217,25 @@ header.header .main .navbar-toggler {
 .t-events .c-hack .card-style button {
 	line-height: 18px;
 	font-size: 12px;
-	background: #be1e97;
-	border: solid 1px #be1e97;
+	/* background: #be1e97; */
+	/* border: solid 1px #be1e97; */
 	padding: 10px 10px 10px 10px;
-	border-radius: 4px;
+	border-radius: 14px;
 	color: #fff;
 	text-transform: uppercase;
 	font-weight: 500;
 	font-family: "OpenSauceTwoSemiBold", sans-serif;
 	letter-spacing: 0px;
 	float: right;
+	@apply bg-gradient-to-r from-[#8072d6] to-[#28188d];
 }
 /*.t-events .c-hack .card-style:hover h4 a button, .t-events .c-hack .card-style:hover a button {background: transparent;color: #BE1E97;}*/
 .t-events .c-hack .card-style h4 a button:hover,
 .t-events .c-hack .card-style a button:hover,
 .t-events .c-hack .card-style button:hover {
-	background: #cb4bab;
+	/* background: #cb4bab;
 	border-color: #cb4bab;
-	color: #ffffff;
+	color: #ffffff; */
 }
 .t-events .container p.evnt-text {
 	float: left;
@@ -1364,37 +1365,42 @@ header.header .main .navbar-toggler .navbar-toggler-icon img {
 }
 .alldata .subs .subs-inpt button {
 	line-height: 16px;
-	font-size: 13px;
-	background: #be1e97;
-	border: solid 2px #be1e97;
-	padding: 12px 20px 12px 20px;
-	border-radius: 4px;
+	/* font-size: 13px; */
+	/* background: #be1e97; */
+	/* border: solid 2px #be1e97; */
+	padding: 12px 20px ;
+	border-radius: 16px;
 	color: #fff;
-	text-transform: capitalize;
-	font-weight: 600;
-	font-family: "OpenSauceSansBold" !important;
+	text-transform: uppercase;
+	/* font-weight: 600; */
+	font-family: "LarssietLight" !important;
 	letter-spacing: 1.2px;
+	/* right: 60px; */
+	top: 8px;
+	@apply bg-gradient-to-r from-[#8072d6] to-[#28188d];
 }
 .subs-txt {
 	font-size: 20px;
-	font-weight: 600;
+	/* font-weight: 600; */
 	margin-bottom: 30px;
-	letter-spacing: 0.2px;
+	/* letter-spacing: 0.2px; */
 	color: #000000;
 	margin-top: 10px;
-	font-family: "OpenSauceTwoSemiBold", sans-serif;
+	font-family: "LarssietLight", sans-serif;
 	-webkit-font-smoothing: antialiased;
 }
 /*.alldata .subs .subs-inpt .email {border-top: transparent;border-right: transparent;border-left: transparent;outline: none;border-color: #ABB0B2; background: transparent;}*/
 .alldata .subs .subs-inpt .email {
 	height: 40px;
-	border-radius: 0px;
+	border-radius: 20px;
 	outline: none;
-	border-color: #abb0b2;
-	background: transparent;
+	/* border-color: #abb0b2; */
+	background: #fff;
 	border: none;
-	border-bottom: 2px solid #797979;
-	font-family: "OpenSauceSansLight";
+	padding-block: 1.75rem;
+	padding-inline: 1rem;
+	/* border-bottom: 2px solid #797979; */
+	font-family: "LarssietLight";
 }
 
 .ban-ner .inner-img img.mobile {
@@ -1495,7 +1501,7 @@ div#carouselExample {
 }
 
 .heder_btn a.btn.nav-link:hover {
-	background: #715fe9;
+	background-color: #715fe9 !important;
 	color: #fff;
 	border-color: #715fe9;
 }
@@ -1614,6 +1620,22 @@ footer .row {
 	font-family: "Lato", sans-serif !important;
 }
 
+.cta-exhibit-btn{
+	background-color: transparent;
+}
+.cta-exhibit-btn:hover{
+	background-color: #3f2aa4 !important;
+	border-color: #3f2aa4 !important;
+}
+
+.cta-tickets-btn{
+	@apply bg-gradient-to-r from-[#8072d6] to-[#28188d];
+}
+
+.cta-tickets-btn:hover{
+	background-color: #3f2aa4 !important;
+	border-color: #3f2aa4 !important;
+}
 /*media quries*/
 
 @media screen and (min-width: 2100px) {
@@ -1737,7 +1759,7 @@ footer.bg .container-lg {
 	div.alldata .subs.row {
 		margin-top: 75px;
 		background-size: 330px 190px;
-		min-height: 192px;
+		height: 192px;
 		background-position: 5px 0px;
 	}
 	div.alldata .subs .subs-inpt button {
@@ -1746,7 +1768,7 @@ footer.bg .container-lg {
 		min-width: 130px;
 	}
 	div.subs_section {
-		max-width: 1200px !important;
+		/* max-width: 1200px !important; */
 	}
 }
 
@@ -1877,7 +1899,7 @@ footer.bg .container-lg {
 	div.alldata .subs.row {
 		margin-top: 75px;
 		background-size: 330px 190px;
-		min-height: 192px;
+		height: 192px;
 		background-position: 30px 0px;
 	}
 	div.alldata .subs.row .subs-mid {
@@ -1894,7 +1916,7 @@ footer.bg .container-lg {
 		min-width: 130px;
 	}
 	div.subs_section {
-		max-width: 1030px !important;
+		/* max-width: 1030px !important; */
 	}
 	footer .footer_inner_bg .foot-logo img {
 		width: 50%;
@@ -2117,7 +2139,7 @@ footer.bg .container-lg {
 	div.alldata .subs.row {
 		margin-top: 75px;
 		background-size: 280px 190px;
-		min-height: 192px;
+		height: 192px;
 		background-position: 20px 0px;
 	}
 	div.alldata .subs.row .subs-mid {
@@ -2134,7 +2156,7 @@ footer.bg .container-lg {
 		min-width: 130px;
 	}
 	div.subs_section {
-		max-width: 790px !important;
+		/* max-width: 790px !important; */
 	}
 	div.filter-btb #all-buttons button#workshop {
 		min-width: 200px;
@@ -2414,13 +2436,13 @@ header.header .main .navbar-toggler {
 		z-index: -1;
 	}
 	footer.bg div p {
-		font-size: 12px;
+		/* font-size: 12px; */
 		display: block;
 		position: relative;
-		font-family: "OpenSauceTwoSemiBold", sans-serif;
+		/* font-family: "OpenSauceTwoSemiBold", sans-serif; */
 		-webkit-font-smoothing: antialiased;
-		font-weight: 500;
-		color: #000;
+		/* font-weight: 500; */
+		/* color: #000; */
 	}
 	.foot-logo {
 		width: /*50%*/ 100%;
@@ -2498,7 +2520,7 @@ header.header .main .navbar-toggler {
 	}
 	div.alldata .subs.row {
 		background: transparent;
-		min-height: auto;
+		height: auto;
 		padding-bottom: 35px;
 		margin-top: 50px;
 	}
@@ -2798,7 +2820,7 @@ header .container-lg , footer .container-lg ,.t-events .container{max-width: 720
 		height: 580px;
 	}
 	header .t-global {
-		margin-bottom: 12px !important;
+		margin-bottom: 0px !important;
 	}
 	header.header {
 		height: 81px;
@@ -2917,7 +2939,7 @@ header .container-lg , footer .container-lg ,.t-events .container{max-width: 720
 		margin-right: auto !important;
 	}
 	div.subs_section {
-		max-width: 500px !important;
+		/* max-width: 500px !important; */
 	}
 	div.own-event {
 		padding: 40px 20px 20px;
@@ -3240,7 +3262,7 @@ header .container-lg , footer .container-lg ,.t-events .container{max-width: 720
 		font-size: 12px;
 	}
 	.own-event button.side-evnt {
-		margin-bottom: 20px;
+		margin-top: 20px;
 	}
 	div.t-events .c-hack .card-style {
 		display: block; /*margin-bottom: 10px*/
@@ -3639,12 +3661,13 @@ header .container-lg , footer .container-lg ,.t-events .container{max-width: 720
 		width: 100%;
 	}
 	div.own-event button {
+		min-height: 45px;
 		width: 230px;
 		padding: 0px 20px;
 		font-size: 12px;
 	}
 	.own-event button.side-evnt {
-		margin-bottom: 22px;
+		margin-top: 22px;
 	}
 	div.t-events .c-hack .card-style {
 		display: block; /*margin-bottom: 10px*/
@@ -3908,7 +3931,7 @@ header .container-lg , footer .container-lg ,.t-events .container{max-width: 720
 		font-size: 17px !important;
 	}
 	footer.bg div p {
-		font-size: 12px;
+		/* font-size: 12px; */
 	}
 	.ban-ner .inner-img img.mobile {
 		display: block !important;
@@ -4042,9 +4065,11 @@ header .container-lg , footer .container-lg ,.t-events .container{max-width: 720
 		width: 225px;
 		padding: 0px 18px;
 		font-size: 12px;
+		min-height: 45px;
+
 	}
 	.own-event button.side-evnt {
-		margin-bottom: 20px;
+		margin-top: 20px;
 	}
 	div.t-events .c-hack .e-divs {
 		padding: 0px 20px;
@@ -4739,7 +4764,7 @@ button.tooltip-button:active {
 	}
 
 	header .t-global {
-		padding-block: 16px !important;
+		padding-block: 0px !important;
 		margin: 0px !important;
 	}
 	header.header {
@@ -4780,7 +4805,7 @@ button.tooltip-button:active {
 	}
 
 	header .t-global {
-		padding-block: 16px !important;
+		padding-block: 0px !important;
 		margin: 0px !important;
 	}
 

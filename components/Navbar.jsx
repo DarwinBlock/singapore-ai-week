@@ -56,7 +56,7 @@ const Navbar = () => {
 
 	return (
 		<header className="header navbar-expand-lg" tw="exclude">
-  <div className="t-global">
+  <div className="t-global p-0">
       {/* <div className="container-lg">
         <a href="http://www.token2049.com/"><span className="arrow">← </span>TOKEN2049 GLOBAL</a>
       </div> */}
@@ -65,7 +65,7 @@ const Navbar = () => {
       <div className="container-lg m-0 w-full px-20 nav-container-wrapper" style={{maxWidth: "none"}}>
         <div className="menu_dv">
           <div className="header-left">
-            <a  href="https://www.dubai.token2049.com">
+            <a  href="https://www.superai.com">
               <img src='/SuperAI-nav-logo.png' alt="SuperAI" />
             </a>
           </div>
@@ -79,24 +79,24 @@ const Navbar = () => {
 
           <div className={"header-right navbar-collapse " + (collapsed? 'collapse':'')} id="navbarSupportedContent">
             <ul className="navbar-nav">
-              <li className="nav-item onlymb"><a href="https://www.dubai.token2049.com/tickets" className="nav-link">TICKETS</a></li>
-              <li className="nav-item"><a href="https://www.dubai.token2049.com/speakers" className="nav-link">SPEAKERS</a></li>
-              <li className="nav-item ml-6">
-                <a href="https://www.dubai.token2049.com/partners" className="nav-link">AGENDA</a>
+              <li className="nav-item onlymb"><a href="https://www.superai.com/tickets" className="nav-link">TICKETS</a></li>
+              <li className="nav-item"><a href="https://www.superai.com/speakers" className="nav-link">SPEAKERS</a></li>
+              <li className="nav-item lg:ml-6">
+                <a href="https://www.superai.com/partners" className="nav-link">AGENDA</a>
               </li>
-              <li className="nav-item ml-6">
-                <a href="https://www.dubai.token2049.com/travel" className="nav-link">PARTNERS</a>
+              <li className="nav-item lg:ml-6">
+                <a href="https://www.superai.com/travel" className="nav-link">PARTNERS</a>
               </li>
-              <li className="nav-item ml-6">
-                <a href="/" className="nav-link ">TRAVEL</a>
+              <li className="nav-item lg:ml-6">
+                <a href="https://www.superai.com/travel" className="nav-link ">TRAVEL</a>
                 {/* side-event-active-link */}
               </li>
-               <li className="nav-item ml-6">
-                {/* <a href="https://www.dubai.token2049.com/travel" className="nav-link">SIDE EVENTS</a> */}
+               <li className="nav-item lg:ml-6">
+                {/* <a href="https://www.superai.com/travel" className="nav-link">SIDE EVENTS</a> */}
               </li>
               <div className="nav-item exhibt heder_btn">
-                <a href="https://www.dubai.token2049.com/partners" className="btn nav-link">EXHIBIT</a>
-                <a href="https://www.dubai.token2049.com/tickets" className="btn bttn nav-link">TICKETS</a>
+                <a href="https://www.superai.com/partners" className="btn nav-link bg-transparent hover:bg-[#715fe9] hover:text-white">EXHIBIT</a>
+                <a href="https://www.superai.com/tickets" className="btn bttn nav-link">TICKETS</a>
               </div>
             </ul>
           </div>

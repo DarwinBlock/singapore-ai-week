@@ -2,9 +2,9 @@ import "./globals.css";
 import "bootstrap/dist/css/bootstrap.css";
 
 export const metadata = {
-	title: "TOKEN2049 Week | 15-21 April 2024 | Dubai",
+	title: "SuperAI | 3-9 June 2024 | Singapore",
 	description:
-		"TOKEN2049 Week is the year's widest range of meetups, workshops, networking drinks and parties with TOKEN2049 being the flagship event of the week – creating unparalleled networking opportunities.",
+		"Singapore AI Week is the year's widest range of meetups, workshops, hackathons networking drinks and parties with SuperAI being the flagship event of the week – creating unparalleled networking opportunities.",
 };
 
 export default function RootLayout({ children }) {
