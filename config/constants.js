@@ -1,4 +1,4 @@
-export const current_date = "2024-06-03";
+export const current_date = "2024-05-29";
 export const last_date = "2024-06-09";
 export const website_url = 'https://week.token2049.com/';
 

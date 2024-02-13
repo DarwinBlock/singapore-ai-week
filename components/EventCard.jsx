@@ -32,7 +32,7 @@ const EventCard = ({
 							<div className="day">{date}</div>
 						</div>
 						<h4>
-							<span>
+							<span className="text-[#715fe9]">
 								<i className="fa fa-clock-o"></i>
 								{startTime}
 								<br /> {endTime}
