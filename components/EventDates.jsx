@@ -1,7 +1,7 @@
 import { current_date } from "@/config/constants";
 
 const EventsDate = ({selectedDate, setSelectedDate}) => {
-    function generateDateRange(currentDate=current_date, numberOfDays=7) {
+    function generateDateRange(currentDate=current_date, numberOfDays=12) {
         const dates = [];
         let current = new Date(currentDate);
       

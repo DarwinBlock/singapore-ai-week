@@ -545,11 +545,12 @@ font-family: 'OpenSauceSansBold';} */
 header.header ul li a {
 	text-decoration: none;
 	color: initial;
-	font-size: 13px;
+	font-size: 17px;
 	font-family: "LarssietLight", sans-serif; /* font-weight: 700;*/
 	font-weight: 600;
 	color: #333333;
 	padding: 2px 0px 0px 0px;
+	min-width: 21.6px;
 }
 header.header ul {
 	display: flex;
@@ -563,6 +564,11 @@ header.header ul {
 	/* display: grid; */
 	display: flex;
 	grid-template-columns: 14.8% 13% 14.8% 11.9% 15.7% 30%;
+}
+
+.side-events-btn:hover{
+	color: white !important;
+	background-color: #3f2aa4 !important;
 }
 
 @-moz-document url-prefix() {
@@ -621,7 +627,7 @@ header.header.navbar-expand-lg ul li a.bttn:hover {
 	color: #fff;
 }
 header.header ul li a:hover {
-	color: #be1e97;
+	color: #3f4aa2;
 }
 .t-events {
 	width: 100%;
@@ -716,7 +722,7 @@ header .t-global {
 	width: 100%;
 	margin-top: 50px;
 	position: relative;
-	z-index: -1;
+	/* z-index: -1; */
 }
 /*.t-events .container .slider-header .slider_inner .events-wrap .events .events-details{display: none;background: #fff;padding: 10px;border: solid 1px #eee;position: absolute;top: 70px;min-width: 300px;}*/
 .t-events .container .slider-header .slider_inner .events-wrap .events .events-details:hover {
@@ -940,7 +946,7 @@ body div.webui-popover .arrow {
 	margin-bottom: 10px;
 }
 .t-events .c-hack .card-style h4 span {
-	color: #410bb9;
+	color: #715fe9;
 }
 .t-inner .container .slider-header .slider_inner.r-border .events-wrap {
 	border-right-color: #fff;
@@ -1205,7 +1211,7 @@ header.header .main .navbar-toggler.collapsed .navbar-toggler-icon .fa.fa-close 
 	display: flex;
 	width: 100%;
 	justify-content: flex-end;
-	align-items: center;
+	align-items: stretch;
 	float: right;
 	padding: 2px 0px 0px 0px;
 }
@@ -1227,6 +1233,7 @@ header.header .main .navbar-toggler {
 	font-family: "OpenSauceTwoSemiBold", sans-serif;
 	letter-spacing: 0px;
 	float: right;
+	transition: none !important;
 	@apply bg-gradient-to-r from-[#8072d6] to-[#28188d];
 }
 /*.t-events .c-hack .card-style:hover h4 a button, .t-events .c-hack .card-style:hover a button {background: transparent;color: #BE1E97;}*/
@@ -1236,6 +1243,7 @@ header.header .main .navbar-toggler {
 	/* background: #cb4bab;
 	border-color: #cb4bab;
 	color: #ffffff; */
+	background: #3f2aa4;
 }
 .t-events .container p.evnt-text {
 	float: left;
@@ -1469,17 +1477,18 @@ div#carouselExample {
 	border-radius: 10px !important;
 	color: #715fe9;
 	border: solid 2px #715fe9;
-	padding: 6px 19px;
-	font-size: 12px;
+	padding: 10px 1.95rem;
+	font-size: 16px;
 	font-family: "Larssiet", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	opacity: 1;
 	font-weight: 500;
 	/* letter-spacing: normal; */
 	/* line-height: 15px; */
-	width: 90px;
+	min-width: 90px;
 	/* height: 33px; */
 	transition: all 0.3s;
+	border-radius: 14px;
 }
 @-moz-document url-prefix() {
 	.heder_btn a.btn.nav-link {
@@ -1501,9 +1510,9 @@ div#carouselExample {
 }
 
 .heder_btn a.btn.nav-link:hover {
-	background-color: #715fe9 !important;
+	background-color: #3f2aa4 !important;
 	color: #fff;
-	border-color: #715fe9;
+	border-color: #3f2aa4;
 }
 
 .heder_btn a.btn.bttn.nav-link {
@@ -1511,15 +1520,23 @@ div#carouselExample {
 	border-radius: 10px !important;
 	color: #fff;
 	border: solid 2px #715fe9;
-	padding: 6px 18px 6px 17px;
-	font-size: 12px;
+	padding: 10px 1.95rem;
+	font-size: 16px;
+	
 	font-family: "Larssiet", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	opacity: 1;
 	font-weight: 500;
 	margin-left: 15px;
 	@apply bg-gradient-to-r from-[#8072d6] to-[#28188d];
+	transition: none !important;
+	border-radius: 14px;
+
 }
+.heder_btn a.btn.bttn.nav-link:hover {
+	background: #3f2aa4 !important;
+}
+
 @-moz-document url-prefix() {
 	.heder_btn a.btn.bttn.nav-link {
 		background: #be1e97;
@@ -1632,8 +1649,12 @@ footer .row {
 	@apply bg-gradient-to-r from-[#8072d6] to-[#28188d];
 }
 
+.newsletter-get-updates-btn:hover{
+	background: #3f2aa4 !important;
+}
+
 .cta-tickets-btn:hover{
-	background-color: #3f2aa4 !important;
+	background: #3f2aa4 !important;
 	border-color: #3f2aa4 !important;
 }
 /*media quries*/
@@ -3262,7 +3283,7 @@ header .container-lg , footer .container-lg ,.t-events .container{max-width: 720
 		font-size: 12px;
 	}
 	.own-event button.side-evnt {
-		margin-top: 20px;
+		margin-bottom: 20px;
 	}
 	div.t-events .c-hack .card-style {
 		display: block; /*margin-bottom: 10px*/
@@ -3667,7 +3688,7 @@ header .container-lg , footer .container-lg ,.t-events .container{max-width: 720
 		font-size: 12px;
 	}
 	.own-event button.side-evnt {
-		margin-top: 22px;
+		margin-bottom: 22px;
 	}
 	div.t-events .c-hack .card-style {
 		display: block; /*margin-bottom: 10px*/
@@ -4069,7 +4090,7 @@ header .container-lg , footer .container-lg ,.t-events .container{max-width: 720
 
 	}
 	.own-event button.side-evnt {
-		margin-top: 20px;
+		margin-bottom: 20px;
 	}
 	div.t-events .c-hack .e-divs {
 		padding: 0px 20px;
@@ -4183,7 +4204,7 @@ div.only-dates-show {
 	display: block;
 	width: 46.6%;
 	float: left;
-	color: #410bb9; /*padding: 0 20px*/
+	color: #715fe9; /*padding: 0 20px*/
 	border-right: solid 2px #e2e2e2;
 	display: grid;
 	grid-template-rows: auto;
@@ -4338,6 +4359,7 @@ div.t-events div.c-hack .all_div-parent div.card-style .col-md-6.event_dv_inner 
 .own-event button:hover {
 	/* HEADER CTA SOLID BG BUTTON */
 	border-color: #715fe9;
+	background-color: #3f2aa4 !important;
 }
 div.filter-btb #all-buttons #function-buttons {
 	display: flex;
@@ -4436,6 +4458,11 @@ header.header .header-right ul li.age-nda div.agenda_new1 span::before {
 	color: #fff;
 	/* border-color: #be1e97; */
 	@apply bg-gradient-to-r from-[#8072d6] to-[#28188d];
+	transition: none !important;
+}
+
+.own-event button.side-evnt:hover {
+	background: #3f2aa4 !important;
 }
 
 .own-event button.hst-own {

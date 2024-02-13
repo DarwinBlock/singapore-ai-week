@@ -81,22 +81,22 @@ const Navbar = () => {
             <ul className="navbar-nav">
               <li className="nav-item onlymb"><a href="https://www.superai.com/tickets" className="nav-link">TICKETS</a></li>
               <li className="nav-item"><a href="https://www.superai.com/speakers" className="nav-link">SPEAKERS</a></li>
-              <li className="nav-item lg:ml-6">
+              <li className="nav-item lg:ml-[45px]">
                 <a href="https://www.superai.com/partners" className="nav-link">AGENDA</a>
               </li>
-              <li className="nav-item lg:ml-6">
+              <li className="nav-item lg:ml-[45px]">
                 <a href="https://www.superai.com/travel" className="nav-link">PARTNERS</a>
               </li>
-              <li className="nav-item lg:ml-6">
+              <li className="nav-item lg:ml-[45px]">
                 <a href="https://www.superai.com/travel" className="nav-link ">TRAVEL</a>
                 {/* side-event-active-link */}
               </li>
-               <li className="nav-item lg:ml-6">
+               <li className="nav-item lg:ml-[45px]">
                 {/* <a href="https://www.superai.com/travel" className="nav-link">SIDE EVENTS</a> */}
               </li>
               <div className="nav-item exhibt heder_btn">
-                <a href="https://www.superai.com/partners" className="btn nav-link bg-transparent hover:bg-[#715fe9] hover:text-white">EXHIBIT</a>
-                <a href="https://www.superai.com/tickets" className="btn bttn nav-link">TICKETS</a>
+                <a href="https://www.superai.com/partners" className="btn nav-link bg-transparent hover:bg-[#3f2aa4] hover:text-white">EXHIBIT</a>
+                <a href="https://www.superai.com/tickets" className="btn bttn nav-link" style={{border: "none"}}>TICKETS</a>
               </div>
             </ul>
           </div>

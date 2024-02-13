@@ -8,7 +8,7 @@ const NewsLetter = () => {
                         <input className="bg-white border-none rounded-[22px] font-lassrietL px-3 md:max-w-none max-w-md md:w-[440px] outline-none py-[18px]" placeholder="name@email.com"></input>
                             <a className="" href="https://superai.us14.list-manage.com/subscribe/post?u=bcae48fc20de0ec8abc1a4d5f&id=82a8dd74fe&f_id=001a9ee0f0" target="_blank">
                                 <button
-                                    className="bg-gradient-to-r hidden md:block absolute top-[50%] translate-y-[-50%] right-2 from-[#8072d6] to-[#28188d] uppercase text-white rounded-[18px] py-[12px] px-[32px]"
+                                    className="bg-gradient-to-r newsletter-get-updates-btn hidden md:block absolute top-[50%] translate-y-[-50%] right-2 from-[#8072d6] to-[#28188d] uppercase text-white rounded-[18px] py-[12px] px-[32px]"
                                 >
                                     Get Updates
                                 </button>
