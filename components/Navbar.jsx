@@ -61,8 +61,8 @@ const Navbar = () => {
         <a href="http://www.token2049.com/"><span className="arrow">← </span>TOKEN2049 GLOBAL</a>
       </div> */}
     </div>
-    <div className="main py-[28px]">
-      <div className="container-lg m-0 w-full px-20 nav-container-wrapper" style={{maxWidth: "none"}}>
+    <div className="main py-[28px]" style={{justifyContent: "center"}}>
+      <div className="container-lg m-0 w-full nav-container-wrapper" style={{maxWidth: "1277px", padding: "0"}}>
         <div className="menu_dv">
           <div className="header-left">
             <a  href="https://www.superai.com">
