@@ -3,7 +3,7 @@ const HeroSection = () => {
         <div className="ban-ner">
             {/* <div className="header-fix-bg"></div> */}
             <div className="inner-img">
-                <div className="container pt-[65px]">
+                <div className="container pt-[95px]">
                     <div className="inner-text md:pt-0 pt-[3.75rem]">
                         <img src={'/SuperAI-Week-Logo.png'} className="desktop" alt="Banner"/>
                         <img src={'/SuperAI-Week-Logo-Stacked.png'} className="mobile" />
