@@ -61,12 +61,12 @@ const Navbar = () => {
         <a href="http://www.token2049.com/"><span className="arrow">← </span>TOKEN2049 GLOBAL</a>
       </div> */}
     </div>
-    <div className="main py-[28px]" style={{justifyContent: "center"}}>
+    <div className="main pb-[28px] pt-[50px]" style={{justifyContent: "center"}}>
       <div className="container-lg m-0 w-full nav-container-wrapper" style={{maxWidth: "1277px", padding: "0"}}>
         <div className="menu_dv">
-          <div className="header-left">
+          <div className="header-left" style={{width: "auto", paddingLeft: 0}}>
             <a  href="https://www.superai.com">
-              <img src='/SuperAI-nav-logo.png' alt="SuperAI" />
+              <img className="w-[224px] h-[38px]" src='/SuperAI-nav-logo.png' width={224} height={38} alt="SuperAI" />
             </a>
           </div>
 
@@ -96,7 +96,7 @@ const Navbar = () => {
               </li>
               <div className="nav-item exhibt heder_btn">
                 <a href="https://www.superai.com/partners" className="btn nav-link bg-transparent hover:bg-[#3f2aa4] hover:text-white">EXHIBIT</a>
-                <a href="https://www.superai.com/tickets" className="btn bttn nav-link" style={{border: "none"}}>TICKETS</a>
+                <a href="https://www.superai.com/tickets" className="btn bttn nav-link" style={{border: "none", lineHeight: "1.7"}}>TICKETS</a>
               </div>
             </ul>
           </div>
