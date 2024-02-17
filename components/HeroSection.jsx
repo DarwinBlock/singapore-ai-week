@@ -18,7 +18,7 @@ const HeroSection = () => {
                             <p className="updts">
                             Watch this space for continuous updates, and join the conversation
                             <br/>
-                            by using <b>#SuperAIWeek</b> on Twitter.
+                            by using <b>#SingaporeAIWeek</b> on Twitter.
                             </p>
                             <div className="own-evnt-btn d-flex">
                             <a href="https://forms.superai.com/singapore-ai-week-event-submission" target="_blank">
