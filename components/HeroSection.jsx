@@ -7,7 +7,7 @@ const HeroSection = () => {
                     <div className="inner-text md:pt-0 pt-[3.75rem]">
                         <img src={'/SuperAI-Week-Logo.png'} className="desktop" alt="Banner"/>
                         <img src={'/SuperAI-Week-Logo-Stacked.png'} className="mobile" />
-                        <p>29 May - 09 June 2024 <span className="dxtop">&middot; Marina bay sands, SINGAPORE</span> </p>
+                        <p>29 May - 09 June 2024 <span className="dxtop">| SINGAPORE</span></p>
                         <div className="own-event">
 
                             <p className="Drinks">
