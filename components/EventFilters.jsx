@@ -21,7 +21,7 @@ const EventFilters = ({ selectedDateFilter }) => {
 		return eventCardData
 			.filter((item) => {
 				const date = new Date(item.event_date);
-				const dateObject = new Date(date.toLocaleString("en-US", { timeZone: "Asia/Dubai" }));
+				const dateObject = new Date(date.toLocaleString("en-US", { timeZone: "Asia/Singapore" }));
 				const year = dateObject.getFullYear();
 				const month = String(dateObject.getMonth() + 1).padStart(2, "0");
 				const day = String(dateObject.getDate()).padStart(2, "0");
@@ -34,9 +34,9 @@ const EventFilters = ({ selectedDateFilter }) => {
 			})
 			.map((item) => {
 				const date = new Date(item.event_date);
-				const dayOfMonth = new Date(date.toLocaleString("en-US", { timeZone: "Asia/Dubai" })).getDate();
+				const dayOfMonth = new Date(date.toLocaleString("en-US", { timeZone: "Asia/Singapore" })).getDate();
 				const options = { weekday: "short" };
-				const abbreviatedDayName = new Intl.DateTimeFormat("en-US", { ...options, timeZone: "Asia/Dubai" }).format(date);
+				const abbreviatedDayName = new Intl.DateTimeFormat("en-US", { ...options, timeZone: "Asia/Singapore" }).format(date);
 
 				function getFormattedTime(timeString) {
 					const timeParts = timeString.split(":");
