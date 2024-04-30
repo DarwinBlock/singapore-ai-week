@@ -2,7 +2,7 @@ const Footer = () => {
 	return (
 		<>
 			<footer className="bg bg-black flex justify-center">
-				<div className="flex lg:flex-row flex-col w-full max-w-[1920px] justify-between px-6 md:px-16 xl:px-24 2xl:px-32 py-10">
+				<div className="flex lg:flex-row flex-col w-full max-w-[1920px] justify-between px-6 md:px-16 xl:px-24 2xl:px-32 py-10 pb-6">
 					<div className="flex lg:justify-normal justify-between">
 						<a className="lg:block hidden" href="https://www.superai.com/">
 							<img className="lg:block hidden" width={300} src="/superai_footer.png" alt="SuperAI" />
@@ -91,12 +91,12 @@ const Footer = () => {
 				</div>
 			</footer>
 			<div className="w-full bg-[#4224A2] flex justify-center">
-				<div className="w-full max-w-[1920px] flex sm:flex-row flex-col justify-between px-6 md:px-16 xl:px-24 2xl:px-32 pt-3 pb-8 sm:pb-16">
+				<div className="w-full max-w-[1920px] flex sm:flex-row flex-col justify-between px-6 md:px-16 xl:px-24 2xl:px-32 pt-3 pb-1">
 					<div className="flex text-sm md:text-lg sm:mb-0 mb-6">
-						<a target="_blank" href="https://www.superai.com/terms-and-conditions" className="no-underline text-white font-lassriet">
+						<a target="_blank" href="https://www.superai.com/terms-and-conditions" className="no-underline text-white font-lassrietL">
 							Terms and Conditions
 						</a>
-						<a target="_blank" href="https://www.superai.com/privacy-policy" className="no-underline text-white font-lassriet ml-4 md:ml-10">
+						<a target="_blank" href="https://www.superai.com/privacy-policy" className="no-underline text-white font-lassrietL ml-4 md:ml-10">
 							Privacy Policy
 						</a>
 					</div>
