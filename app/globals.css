@@ -117,7 +117,7 @@ body {
 	border-radius: 0px;
 	display: flex;
 	align-items: center;
-	background: #FAFAFA;
+	background: #fafafa;
 	min-height: 140px;
 }
 .t-events .c-hack .e-divs {
@@ -566,9 +566,20 @@ header.header ul {
 	grid-template-columns: 14.8% 13% 14.8% 11.9% 15.7% 30%;
 }
 
-.side-events-btn:hover{
-	color: white !important;
-	background-color: #3f2aa4 !important;
+#side-events-btn {
+	background: transparent !important;
+}
+
+.side-events-btn {
+	color: #fff !important;
+	border: 2px solid #fff !important;
+	background: transparent !important;
+}
+
+.side-events-btn:hover {
+	color: #a295e0 !important;
+	border: 2px solid #a295e0 !important;
+	background: transparent !important;
 }
 
 @-moz-document url-prefix() {
@@ -1058,10 +1069,10 @@ body div.webui-popover .arrow {
 	width: 100%;
 }
 .ban-ner .inner-img {
-	height: 696px;
+	height: 80vh;
 	display: flex;
 	width: 100%;
-	background-image: url("/SuperAI-Week-Header.png");
+	background-image: url("/SuperAI-Week-Header.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -1376,7 +1387,7 @@ header.header .main .navbar-toggler .navbar-toggler-icon img {
 	/* font-size: 13px; */
 	/* background: #be1e97; */
 	/* border: solid 2px #be1e97; */
-	padding: 12px 20px ;
+	padding: 12px 20px;
 	border-radius: 16px;
 	color: #fff;
 	text-transform: uppercase;
@@ -1473,10 +1484,10 @@ div#carouselExample {
 	align-items: center;
 }
 .heder_btn a.btn.nav-link {
-	background: #fff;
+	background: transparent;
 	border-radius: 10px !important;
-	color: #715fe9;
-	border: solid 2px #715fe9;
+	color: #fff;
+	border: solid 2px #fff;
 	padding: 10px 1.95rem;
 	font-size: 16px;
 	font-family: "Larssiet", sans-serif;
@@ -1492,10 +1503,10 @@ div#carouselExample {
 }
 @-moz-document url-prefix() {
 	.heder_btn a.btn.nav-link {
-		background: #fff;
+		background: transparent;
 		border-radius: 4px !important;
-		color: #be1e97;
-		border: solid 2px #be1e97;
+		color: #fff;
+		border: solid 2px #fff;
 		padding: 7px 19px 6px 18px;
 		font-size: 12px;
 		font-family: "OpenSauceTwoSemiBold", sans-serif;
@@ -1510,9 +1521,8 @@ div#carouselExample {
 }
 
 .heder_btn a.btn.nav-link:hover {
-	background-color: #3f2aa4 !important;
-	color: #fff;
-	border-color: #3f2aa4;
+	color: #a295e0 !important;
+	border-color: #a295e0 !important;
 }
 
 .heder_btn a.btn.bttn.nav-link {
@@ -1522,7 +1532,7 @@ div#carouselExample {
 	border: solid 2px #715fe9;
 	padding: 10px 1.95rem;
 	font-size: 16px;
-	
+
 	font-family: "Larssiet", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	opacity: 1;
@@ -1531,7 +1541,6 @@ div#carouselExample {
 	@apply bg-gradient-to-r from-[#8072d6] to-[#28188d];
 	transition: none !important;
 	border-radius: 14px;
-
 }
 .heder_btn a.btn.bttn.nav-link:hover {
 	background: #3f2aa4 !important;
@@ -1637,23 +1646,23 @@ footer .row {
 	font-family: "Lato", sans-serif !important;
 }
 
-.cta-exhibit-btn{
+.cta-exhibit-btn {
 	background-color: transparent;
 }
-.cta-exhibit-btn:hover{
+.cta-exhibit-btn:hover {
 	background-color: #3f2aa4 !important;
 	border-color: #3f2aa4 !important;
 }
 
-.cta-tickets-btn{
+.cta-tickets-btn {
 	@apply bg-gradient-to-r from-[#8072d6] to-[#28188d];
 }
 
-.newsletter-get-updates-btn:hover{
+.newsletter-get-updates-btn:hover {
 	background: #3f2aa4 !important;
 }
 
-.cta-tickets-btn:hover{
+.cta-tickets-btn:hover {
 	background: #3f2aa4 !important;
 	border-color: #3f2aa4 !important;
 }
@@ -1956,7 +1965,7 @@ footer.bg .container-lg {
 		right: 10px;
 	}
 
-	.nav-container-wrapper{
+	.nav-container-wrapper {
 		max-width: none;
 	}
 }
@@ -4087,7 +4096,6 @@ header .container-lg , footer .container-lg ,.t-events .container{max-width: 720
 		padding: 0px 18px;
 		font-size: 12px;
 		min-height: 45px;
-
 	}
 	.own-event button.side-evnt {
 		margin-bottom: 20px;
@@ -4181,6 +4189,14 @@ header .container-lg , footer .container-lg ,.t-events .container{max-width: 720
 	div.ban-ner .inner-text .own-event p {
 		font-size: 14px !important;
 	}
+}
+
+.nav-item > .nav-link {
+	color: #fff;
+}
+
+.nav-item > .nav-link:hover {
+	color: #a295e0;
 }
 
 @media screen and (min-width: 320px) and (max-width: 620px) {
@@ -4575,7 +4591,6 @@ header.header .header-right ul li.age-nda div.agenda_new1 span::before {
 	}
 }
 
-
 .tooltip-button {
 	background: none;
 	color: #7a7a7a;
@@ -4770,23 +4785,22 @@ button.tooltip-button:active {
 	@apply dark:bg-dark-600/80 bg-light-100/10;
 }
 
-
-.featured-card-content-div{
+.featured-card-content-div {
 	border-radius: 1.5rem !important;
 }
 
-.featured-card-content-wrapper{
+.featured-card-content-wrapper {
 	border-radius: 1.75rem !important;
 }
 
-.side-event-active-link{
+.side-event-active-link {
 	color: #be1e97 !important;
 }
 @media screen and (max-width: 767px) and (min-width: 401px) {
-	div.t-events{
+	div.t-events {
 		padding-bottom: 0px !important;
 	}
-	.header-fix-bg{
+	.header-fix-bg {
 		height: 107px;
 	}
 
@@ -4798,36 +4812,36 @@ button.tooltip-button:active {
 		height: 107px;
 	}
 
-	div.main{
+	div.main {
 		padding-top: 20px;
 	}
 
-	header.header .main a img{
+	header.header .main a img {
 		width: 230px;
 		height: auto !important;
 	}
 
-	header.header .main .navbar-toggler.collapsed .navbar-toggler-icon img.burger-button{
+	header.header .main .navbar-toggler.collapsed .navbar-toggler-icon img.burger-button {
 		height: auto;
 		width: 40px;
 		max-height: none;
 	}
 
-	header.header .main .navbar-toggler.collapsed .navbar-toggler-icon img.close-burger-btn{
+	header.header .main .navbar-toggler.collapsed .navbar-toggler-icon img.close-burger-btn {
 		height: auto;
 		width: 25px;
 		max-height: none;
-	}	
+	}
 }
 
 @media screen and (max-width: 400px) {
-	.header-fix-bg{
+	.header-fix-bg {
 		height: 95px;
 	}
 	header.header {
 		height: 95px;
 	}
-	div.main{
+	div.main {
 		padding-top: 12px;
 	}
 
@@ -4836,26 +4850,26 @@ button.tooltip-button:active {
 		margin: 0px !important;
 	}
 
-	header.header .main a img{
+	header.header .main a img {
 		width: 200px;
 		height: auto !important;
 	}
 
-	header.header .main .navbar-toggler.collapsed .navbar-toggler-icon img.burger-button{
+	header.header .main .navbar-toggler.collapsed .navbar-toggler-icon img.burger-button {
 		height: auto;
 		width: 35px;
 		max-height: none;
 	}
 
-	header.header .main .navbar-toggler.collapsed .navbar-toggler-icon img.close-burger-btn{
+	header.header .main .navbar-toggler.collapsed .navbar-toggler-icon img.close-burger-btn {
 		height: auto;
 		width: 25px;
 		max-height: none;
-	}	
+	}
 }
 
 @media screen and (max-width: 401px) {
-	div.t-events{
+	div.t-events {
 		padding-bottom: 0px !important;
 	}
 }

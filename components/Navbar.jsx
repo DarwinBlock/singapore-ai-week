@@ -124,7 +124,10 @@ const Navbar = () => {
 								</li>
 								<li className="nav-item lg:ml-[45px]">{/* <a href="https://www.superai.com/travel" className="nav-link">SIDE EVENTS</a> */}</li>
 								<div className="nav-item exhibt heder_btn">
-									<a href="https://www.superai.com/partners" className="btn nav-link bg-transparent hover:bg-[#3f2aa4] hover:text-white">
+									<a
+										href="https://www.superai.com/partners"
+										className="btn nav-link bg-transparent hover:bg-transparent border-2 border-white hover:border-[#A295E0] text-white hover:text-[#A295E0]"
+									>
 										EXHIBIT
 									</a>
 									<a href="https://www.superai.com/tickets" className="btn bttn nav-link" style={{ border: "none", lineHeight: "1.7" }}>
