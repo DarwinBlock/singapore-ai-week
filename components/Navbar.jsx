@@ -113,7 +113,7 @@ const Navbar = () => {
 								</li>
 								<li className="nav-item lg:ml-[45px]">
 									<a href="https://www.superai.com/genesis" className="nav-link">
-										GENESIS
+										STARTUP COMPETITION
 									</a>
 								</li>
 								<li className="nav-item lg:ml-[45px]">
