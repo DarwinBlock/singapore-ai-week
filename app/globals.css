@@ -1069,7 +1069,7 @@ body div.webui-popover .arrow {
 	width: 100%;
 }
 .ban-ner .inner-img {
-	height: 80vh;
+	min-height: 80vh;
 	display: flex;
 	width: 100%;
 	background-image: url("/SuperAI-Week-Header.svg");
@@ -1217,6 +1217,7 @@ header.header .main .navbar-toggler.collapsed .navbar-toggler-icon .fa.fa-close 
 }
 .mobile {
 	display: none !important;
+	margin-top: 20px;
 }
 .heder_btn {
 	display: flex;
@@ -3965,6 +3966,7 @@ header .container-lg , footer .container-lg ,.t-events .container{max-width: 720
 	}
 	.ban-ner .inner-img img.mobile {
 		display: block !important;
+		margin-top: 40px !important;
 	}
 	.ban-ner .inner-img img.desktop {
 		display: none;
