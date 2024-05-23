@@ -4831,7 +4831,7 @@ button.tooltip-button:active {
 
 	header.header .main .navbar-toggler.collapsed .navbar-toggler-icon img.close-burger-btn {
 		height: auto;
-		width: 25px;
+		width: 38px;
 		max-height: none;
 	}
 }
@@ -4865,7 +4865,7 @@ button.tooltip-button:active {
 
 	header.header .main .navbar-toggler.collapsed .navbar-toggler-icon img.close-burger-btn {
 		height: auto;
-		width: 25px;
+		width: 38px;
 		max-height: none;
 	}
 }
@@ -4938,4 +4938,114 @@ button.tooltip-button:active {
 .agendaSubmenu-link:hover {
 	color: #8072d6;
 	text-decoration: none;
+}
+
+#hamburger-overlay {
+	position: fixed;
+	top: 0;
+	min-height: 100vh !important;
+	height: 100vh !important;
+	min-width: 100vw !important;
+	background-color: rgb(17, 25, 40);
+	color: #000;
+	z-index: 5;
+}
+
+@media screen and (min-width: 767px) {
+	#hamburger-overlay {
+		display: none;
+	}
+}
+
+.navbar-navs {
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column !important;
+	justify-content: start;
+	align-items: start;
+	margin-top: 75px !important;
+	font-family: "Larssiet", sans-serif;
+	overflow: scroll;
+	gap: 16px;
+}
+
+.nav-link-ham {
+	position: relative;
+	z-index: 20 !important;
+	color: #fff !important;
+	text-decoration: none !important;
+	font-size: 30px !important;
+	font-weight: 400;
+	font-family: "Larssiet", sans-serif;
+	margin-top: -6px;
+	padding-left: 40px !important;
+}
+
+.ham-btns {
+	margin-top: 20px;
+	display: flex;
+	justify-content: start;
+	align-items: start;
+	padding-left: 40px;
+}
+
+.ham-btn {
+	color: #fff;
+	text-decoration: none !important;
+	font-size: 20px;
+	font-weight: 400;
+	background-color: transparent;
+	border: 2px solid #fff;
+	color: #fff;
+	padding: 15px 38px;
+	border-radius: 16px;
+	font-family: "Larssiet", sans-serif;
+}
+
+.ham-btn:hover {
+	color: #a295e0;
+	border: 2px solid #a295e0;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+.ham-btn-tickets {
+	color: #fff;
+	text-decoration: none !important;
+	font-size: 20px;
+	font-weight: 400;
+	margin-left: 16px;
+	background: linear-gradient(to right, #876bd1 0%, #2c18a0 100%);
+	padding: 16px 39px;
+	border-radius: 16px;
+	font-family: "Larssiet", sans-serif;
+}
+
+.ham-btn-tickets:hover {
+	background: linear-gradient(to right, #876bd1 30%, #2c18a0 100%);
+	color: #fff;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+.social-btn-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 32px;
+	margin-top: 10px;
+}
+
+.ham-logo-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.ham-img {
+	width: 32px !important;
 }

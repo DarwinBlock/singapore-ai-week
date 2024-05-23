@@ -141,7 +141,7 @@ const Navbar = () => {
 					<div className="menu_dv">
 						<div className="header-left" style={{ width: "auto", paddingLeft: 0 }}>
 							<a href="https://www.superai.com">
-								<img className="w-[224px] h-[38px]" src="/SuperAI-nav-logo.png" width={224} height={38} alt="SuperAI" />
+								<img className="w-[220px] h-[38px]" src="/SuperAI-nav-logo.png" width={220} height={38} alt="SuperAI" />
 							</a>
 						</div>
 
@@ -158,15 +158,15 @@ const Navbar = () => {
 							<span className="navbar-toggler-icon">
 								{collapsed ? (
 									<i className="fa fa-bars" aria-hidden="true">
-										<img className="burger-button invert" src="/menu-bar.png" />
+										<img className="burger-button invert mt-1" src="/menu-bar.png" />
 									</i>
 								) : (
-									<img className="close-burger-btn w-[20px] h-[20px]" width={20} src="/close-icon.svg" />
+									<img className="close-burger-btn w-[20px] h-[20px] invert" width={20} src="/close-icon.svg" />
 								)}
 							</span>
 						</button>
 
-						<div className={"header-right navbar-collapse " + (collapsed ? "collapse" : "")} id="navbarSupportedContent">
+						<div className={"header-right navbar-collapse md:block hidden " + (collapsed ? "collapse" : "")} id="navbarSupportedContent">
 							<ul className="navbar-nav">
 								<li className="nav-item onlymb">
 									<a href="https://www.superai.com/tickets" className="nav-link">
@@ -210,6 +210,98 @@ const Navbar = () => {
 								</div>
 							</ul>
 						</div>
+
+						{!collapsed ? (
+							<div id="hamburger-overlay" className="md:hidden block">
+								<div class="navbar-navs">
+									<span class="nav-item">
+										<a href="https://www.superai.com/speakers" class="nav-link-ham">
+											SPEAKERS
+										</a>
+									</span>
+
+									<span class="nav-item">
+										<a href="https://www.superai.com/agenda" class="nav-link-ham">
+											AGENDA
+										</a>
+									</span>
+									<span class="nav-item">
+										<a href="https://www.superai.com/partners" class="nav-link-ham">
+											PARTNERS
+										</a>
+									</span>
+									<span class="nav-item">
+										<a href="https://www.superai.com/genesis" class="nav-link-ham">
+											STARTUPS
+										</a>
+									</span>
+									<span class="nav-item">
+										<a href="https://www.superai.com/travel" class="nav-link-ham">
+											TRAVEL
+										</a>
+									</span>
+									<span class="nav-item">
+										<a href="https://www.superai.com/mobileapp" class="nav-link-ham">
+											MOBILE APP
+										</a>
+									</span>
+									<span class="nav-item">
+										<a href="https://sgaiweek.com" class="nav-link-ham">
+											SINGAPORE AI WEEK
+										</a>
+									</span>
+									<span class="nav-item">
+										<a href="https://pfp.superai.com" class="nav-link-ham">
+											PFPs
+										</a>
+									</span>
+
+									<div class="ham-btns">
+										<a href="https://www.superai.com/partners" class="ham-btn">
+											EXHIBIT
+										</a>
+										<a href="https://www.superai.com/tickets" class="ham-btn-tickets">
+											TICKETS
+										</a>
+									</div>
+
+									<div id="social-btn-container" class="social-btn-container">
+										<a
+											href="https://www.linkedin.com/company/superai-conference"
+											target="_blank"
+											rel="noopener noreferrer"
+											class="social-btn-ham"
+										>
+											<img src="./linkedin.webp" width="32" className="ham-img" />
+										</a>
+
+										<a href="https://x.com/superai_conf" target="_blank" rel="noopener noreferrer" class="social-btn-ham">
+											<img src="./x.webp" width="32" className="ham-img" />
+										</a>
+
+										<a href="https://www.youtube.com/@superai_conf" target="_blank" rel="noopener noreferrer" class="social-btn-ham">
+											<img src="./youtube.webp" width="32" className="ham-img" />
+										</a>
+
+										<a
+											href="https://join.slack.com/t/superaiofficial/shared_invite/zt-2b8waixnq-1H09r_GhwqoZDrEtGlLfqQ"
+											target="_blank"
+											rel="noopener noreferrer"
+											class="social-btn-ham"
+										>
+											<img src="./slack.webp" width="32" className="ham-img" />
+										</a>
+									</div>
+
+									<div class="ham-logo-container">
+										<a href="https://www.superai.com">
+											<img src="./superai-ham.webp" width="55%" />
+										</a>
+									</div>
+								</div>
+							</div>
+						) : null}
+
 						{pathname === "/admin" && (
 							<div
 								onClick={() => handleLogout()}
