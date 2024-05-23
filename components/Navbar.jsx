@@ -52,6 +52,83 @@ const Navbar = () => {
 	// 		setCollapsed(false);
 	// })
 
+	useEffect(() => {
+		const agenda = document.querySelector(".agenda");
+		const agendaSubmenu = document.querySelector(".agendaSubmenu");
+		const experience = document.querySelector(".experience");
+		const submenu = document.querySelector(".submenu");
+
+		let timeoutId1;
+		let timeoutId2;
+
+		const handleAgendaMouseEnter = () => {
+			agendaSubmenu.style.display = "flex";
+			agendaSubmenu.style.gap = "120px";
+			agendaSubmenu.style.justifyContent = "center";
+			agendaSubmenu.style.width = "100vw";
+			agendaSubmenu.style.marginTop = "-30px";
+			clearTimeout(timeoutId1);
+		};
+
+		const handleAgendaMouseLeave = () => {
+			timeoutId1 = setTimeout(() => {
+				agendaSubmenu.style.display = "none";
+			}, 2000);
+		};
+
+		const handleAgendaSubmenuMouseEnter = () => {
+			clearTimeout(timeoutId1);
+		};
+
+		const handleAgendaSubmenuMouseLeave = () => {
+			agendaSubmenu.style.display = "none";
+		};
+
+		const handleExperienceMouseEnter = () => {
+			submenu.style.display = "flex";
+			submenu.style.gap = "120px";
+			submenu.style.justifyContent = "center";
+			submenu.style.width = "100vw";
+			submenu.style.marginTop = "-30px";
+			clearTimeout(timeoutId2);
+		};
+
+		const handleExperienceMouseLeave = () => {
+			timeoutId2 = setTimeout(() => {
+				submenu.style.display = "none";
+			}, 2000);
+		};
+
+		const handleSubmenuMouseEnter = () => {
+			clearTimeout(timeoutId2);
+		};
+
+		const handleSubmenuMouseLeave = () => {
+			submenu.style.display = "none";
+		};
+
+		agenda.addEventListener("mouseenter", handleAgendaMouseEnter);
+		agenda.addEventListener("mouseleave", handleAgendaMouseLeave);
+		agendaSubmenu.addEventListener("mouseenter", handleAgendaSubmenuMouseEnter);
+		agendaSubmenu.addEventListener("mouseleave", handleAgendaSubmenuMouseLeave);
+		experience.addEventListener("mouseenter", handleExperienceMouseEnter);
+		experience.addEventListener("mouseleave", handleExperienceMouseLeave);
+		submenu.addEventListener("mouseenter", handleSubmenuMouseEnter);
+		submenu.addEventListener("mouseleave", handleSubmenuMouseLeave);
+
+		// Cleanup function to remove event listeners when the component is unmounted
+		return () => {
+			agenda.removeEventListener("mouseenter", handleAgendaMouseEnter);
+			agenda.removeEventListener("mouseleave", handleAgendaMouseLeave);
+			agendaSubmenu.removeEventListener("mouseenter", handleAgendaSubmenuMouseEnter);
+			agendaSubmenu.removeEventListener("mouseleave", handleAgendaSubmenuMouseLeave);
+			experience.removeEventListener("mouseenter", handleExperienceMouseEnter);
+			experience.removeEventListener("mouseleave", handleExperienceMouseLeave);
+			submenu.removeEventListener("mouseenter", handleSubmenuMouseEnter);
+			submenu.removeEventListener("mouseleave", handleSubmenuMouseLeave);
+		};
+	}, []);
+
 	return (
 		<header className="header navbar-expand-lg" tw="exclude">
 			<div className="t-global p-0">
@@ -59,7 +136,7 @@ const Navbar = () => {
         <a href="http://www.token2049.com/"><span className="arrow">← </span>TOKEN2049 GLOBAL</a>
       </div> */}
 			</div>
-			<div className="main pb-[28px] pt-[50px]" style={{ justifyContent: "center" }}>
+			<div className="main pb-[28px] pt-[35px]" style={{ justifyContent: "center" }}>
 				<div className="container-lg m-0 w-full nav-container-wrapper" style={{ maxWidth: "1277px", padding: "0" }}>
 					<div className="menu_dv">
 						<div className="header-left" style={{ width: "auto", paddingLeft: 0 }}>
@@ -81,7 +158,7 @@ const Navbar = () => {
 							<span className="navbar-toggler-icon">
 								{collapsed ? (
 									<i className="fa fa-bars" aria-hidden="true">
-										<img className="burger-button" src="/menu-bar.png" />
+										<img className="burger-button invert" src="/menu-bar.png" />
 									</i>
 								) : (
 									<img className="close-burger-btn w-[20px] h-[20px]" width={20} src="/close-icon.svg" />
@@ -101,11 +178,10 @@ const Navbar = () => {
 										SPEAKERS
 									</a>
 								</li>
-								<li className="nav-item lg:ml-[45px]">
-									<a href="https://www.superai.com/agenda" className="nav-link">
-										AGENDA
-									</a>
+								<li className="nav-item lg:ml-[45px] agenda">
+									<span class="nav-link">AGENDA</span>
 								</li>
+
 								<li className="nav-item lg:ml-[45px]">
 									<a href="https://www.superai.com/partners" className="nav-link">
 										PARTNERS
@@ -116,12 +192,10 @@ const Navbar = () => {
 										STARTUP COMPETITION
 									</a>
 								</li>
-								<li className="nav-item lg:ml-[45px]">
-									<a href="https://www.superai.com/travel" className="nav-link ">
-										TRAVEL
-									</a>
-									{/* side-event-active-link */}
+								<li className="nav-item lg:ml-[45px] experience">
+									<span class="nav-link">EXPERIENCE</span>
 								</li>
+
 								<li className="nav-item lg:ml-[45px]">{/* <a href="https://www.superai.com/travel" className="nav-link">SIDE EVENTS</a> */}</li>
 								<div className="nav-item exhibt heder_btn">
 									<a
@@ -145,6 +219,37 @@ const Navbar = () => {
 							</div>
 						)}
 					</div>
+				</div>
+			</div>
+
+			<div className="p-1 bg-transparent">
+				<div className="agendaSubmenu">
+					<a href="https://www.superai.com/agenda" class="agendaSubmenu-link">
+						IO.NET MAIN STAGE
+					</a>
+					<a href="https://www.superai.com/motiff-stage" class="agendaSubmenu-link">
+						MOTIFF STAGE
+					</a>
+				</div>
+			</div>
+
+			<div className="p-1 bg-transparent">
+				<div class="submenu">
+					<a href="https://www.superai.com/travel" class="submenu-link">
+						TRAVEL
+					</a>
+					<a href="https://www.superai.com/mobileapp" class="submenu-link">
+						MOBILE APP
+					</a>
+					<a href="https://week.superai.com" class="submenu-link">
+						SG AI WEEK
+					</a>
+					<a href="https://pfp.superai.com" class="submenu-link pfps">
+						PFPs
+					</a>
+					<a href="https://www.superai.com/about" class="submenu-link">
+						OUR EVENTS
+					</a>
 				</div>
 			</div>
 		</header>

@@ -1072,7 +1072,7 @@ body div.webui-popover .arrow {
 	min-height: 80vh;
 	display: flex;
 	width: 100%;
-	background-image: url("/SuperAI-Week-Header.svg");
+	background-image: url("/SuperAI-Week-Header.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -4874,4 +4874,68 @@ button.tooltip-button:active {
 	div.t-events {
 		padding-bottom: 0px !important;
 	}
+}
+
+.experience {
+	position: static;
+}
+.experience:hover .submenu {
+	display: flex;
+	gap: 40px;
+	justify-content: center;
+	width: 100vw;
+	margin-top: -30px;
+}
+.submenu {
+	z-index: 100;
+	display: none;
+	position: absolute;
+	background-color: #2c374b;
+	padding: 12px;
+	padding-top: 15px;
+	top: 100%;
+	left: 0;
+	right: 0;
+	margin-top: -10px !important;
+}
+.submenu-link {
+	color: #fff;
+	text-decoration: none;
+	margin-bottom: 5px;
+}
+.submenu-link:hover {
+	color: #8072d6;
+	text-decoration: none;
+}
+
+.agenda {
+	position: static;
+}
+.agenda:hover .agendaSubmenu {
+	display: flex;
+	gap: 40px;
+	justify-content: center;
+	width: 100vw;
+	margin-top: -30px;
+}
+.agendaSubmenu {
+	z-index: 100;
+	display: none;
+	position: absolute;
+	background-color: #2c374b;
+	padding: 12px;
+	padding-top: 15px;
+	top: 100%;
+	left: 0;
+	right: 0;
+	margin-top: -10px !important;
+}
+.agendaSubmenu-link {
+	color: #fff;
+	text-decoration: none;
+	margin-bottom: 5px;
+}
+.agendaSubmenu-link:hover {
+	color: #8072d6;
+	text-decoration: none;
 }
