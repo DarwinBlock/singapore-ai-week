@@ -5058,3 +5058,12 @@ button.tooltip-button:active {
 .ham-img {
 	width: 32px !important;
 }
+
+.textWhite {
+	color: #fff;
+}
+
+.textWhite:hover {
+	color: #715fe9 !important;
+	transition-duration: 0.2s;
+}

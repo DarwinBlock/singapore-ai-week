@@ -333,7 +333,7 @@ const Navbar = () => {
 					<a href="https://www.superai.com/mobileapp" class="submenu-link">
 						MOBILE APP
 					</a>
-					<a href="https://week.superai.com" class="submenu-link">
+					<a href="https://sgaiweek.com" class="submenu-link">
 						SG AI WEEK
 					</a>
 					<a href="https://pfp.superai.com" class="submenu-link pfps">
