@@ -155,7 +155,7 @@ const Navbar = () => {
 							aria-expanded="false"
 							aria-label="Toggle navigation"
 						>
-							<span className="navbar-toggler-icon">
+							<span className="navbar-toggler-icon mr-4">
 								{collapsed ? (
 									<i className="fa fa-bars" aria-hidden="true">
 										<img className="burger-button invert mt-1" src="/menu-bar.png" />
@@ -168,11 +168,11 @@ const Navbar = () => {
 
 						<div className={"header-right navbar-collapse md:block hidden " + (collapsed ? "collapse" : "")} id="navbarSupportedContent">
 							<ul className="navbar-nav">
-								<li className="nav-item onlymb">
+								{/* <li className="nav-item onlymb">
 									<a href="https://www.superai.com/tickets" className="nav-link">
 										TICKETS
 									</a>
-								</li>
+								</li> */}
 								<li className="nav-item">
 									<a href="https://www.superai.com/speakers" className="nav-link">
 										SPEAKERS

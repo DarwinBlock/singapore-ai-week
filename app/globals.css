@@ -1069,7 +1069,8 @@ body div.webui-popover .arrow {
 	width: 100%;
 }
 .ban-ner .inner-img {
-	min-height: 80vh;
+	height: 80vh;
+	min-height: 750px;
 	display: flex;
 	width: 100%;
 	background-image: url("/SuperAI-Week-Header.png");
@@ -1245,8 +1246,7 @@ header.header .main .navbar-toggler {
 	font-family: "OpenSauceTwoSemiBold", sans-serif;
 	letter-spacing: 0px;
 	float: right;
-	transition: none !important;
-	@apply bg-gradient-to-r from-[#8072d6] to-[#28188d];
+	background: linear-gradient(to right, #876bd1 0%, #2c18a0 130%);
 }
 /*.t-events .c-hack .card-style:hover h4 a button, .t-events .c-hack .card-style:hover a button {background: transparent;color: #BE1E97;}*/
 .t-events .c-hack .card-style h4 a button:hover,
@@ -1255,7 +1255,10 @@ header.header .main .navbar-toggler {
 	/* background: #cb4bab;
 	border-color: #cb4bab;
 	color: #ffffff; */
-	background: #3f2aa4;
+	background: linear-gradient(to right, #876bd1 30%, #2c18a0 130%);
+	color: #fff !important;
+	transition-duration: 0.4s;
+	cursor: pointer;
 }
 .t-events .container p.evnt-text {
 	float: left;
@@ -1310,19 +1313,20 @@ header.header .main .navbar-toggler .navbar-toggler-icon img {
 	/* opacity: 0.9; */
 }
 .own-event button {
+	width: 100%;
 	line-height: 22px;
-	font-size: 18px;
+	font-size: 18px !important;
 	background: transparent;
-	border: solid 1px #715fe9;
-	padding: 14px 28px;
+	padding: 16px 20px;
 	border-radius: 14px;
 	color: #fff;
 	text-transform: capitalize;
 	font-weight: 500;
-	font-family: "LarssietLight", sans-serif;
+	font-family: "Larssiet", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	/* height: 45px; */
 	transition: all 0.3s;
+	white-space: nowrap;
 }
 .own-event button:hover {
 	background: #715fe9;
@@ -1539,17 +1543,19 @@ div#carouselExample {
 	opacity: 1;
 	font-weight: 500;
 	margin-left: 15px;
-	@apply bg-gradient-to-r from-[#8072d6] to-[#28188d];
-	transition: none !important;
+	background: linear-gradient(to right, #876bd1 0%, #2c18a0 130%);
 	border-radius: 14px;
+	cursor: pointer;
 }
 .heder_btn a.btn.bttn.nav-link:hover {
-	background: #3f2aa4 !important;
+	background: linear-gradient(to right, #876bd1 30%, #2c18a0 130%);
+	color: #fff !important;
+	transition-duration: 0.4s;
 }
 
 @-moz-document url-prefix() {
 	.heder_btn a.btn.bttn.nav-link {
-		background: #be1e97;
+		background: linear-gradient(to right, #876bd1 0%, #2c18a0 130%);
 		border-radius: 4px !important;
 		color: #fff;
 		border: solid 2px #be1e97;
@@ -2424,7 +2430,7 @@ header.header .main .navbar-toggler {
 		float: left;
 		width: 90%;
 		margin-left: 2px;
-		padding-left: 0;
+		padding-left: 20px !important;
 		margin-top: 6px;
 		/* margin added */
 	}
@@ -2542,7 +2548,7 @@ header.header .main .navbar-toggler {
 	div.filter-btb #payment-buttons button,
 	div.t-events .c-hack .card-style a button,
 	div.alldata .subs .subs-inpt button {
-		border-radius: 4px !important;
+		border-radius: 14px !important;
 		border-width: 1px;
 	}
 	/* div.filter-btb div#payment-buttons button ,div.filter-btb div#all-buttons button{padding: 15px 15px 15px;}*/
@@ -3293,7 +3299,7 @@ header .container-lg , footer .container-lg ,.t-events .container{max-width: 720
 		font-size: 12px;
 	}
 	.own-event button.side-evnt {
-		margin-bottom: 20px;
+		margin-bottom: 12px;
 	}
 	div.t-events .c-hack .card-style {
 		display: block; /*margin-bottom: 10px*/
@@ -3694,11 +3700,11 @@ header .container-lg , footer .container-lg ,.t-events .container{max-width: 720
 	div.own-event button {
 		min-height: 45px;
 		width: 230px;
-		padding: 0px 20px;
+		padding: 10px 20px;
 		font-size: 12px;
 	}
 	.own-event button.side-evnt {
-		margin-bottom: 22px;
+		margin-bottom: 14px;
 	}
 	div.t-events .c-hack .card-style {
 		display: block; /*margin-bottom: 10px*/
@@ -4095,12 +4101,12 @@ header .container-lg , footer .container-lg ,.t-events .container{max-width: 720
 	}
 	div.own-event button {
 		width: 225px;
-		padding: 0px 18px;
+		padding: 10px 18px;
 		font-size: 12px;
 		min-height: 45px;
 	}
 	.own-event button.side-evnt {
-		margin-bottom: 20px;
+		margin-bottom: 12px;
 	}
 	div.t-events .c-hack .e-divs {
 		padding: 0px 20px;
@@ -4475,12 +4481,15 @@ header.header .header-right ul li.age-nda div.agenda_new1 span::before {
 	/* background: #be1e97; */
 	color: #fff;
 	/* border-color: #be1e97; */
-	@apply bg-gradient-to-r from-[#8072d6] to-[#28188d];
-	transition: none !important;
+	background: linear-gradient(to right, #876bd1 0%, #2c18a0 130%);
+	border: none !important;
 }
 
 .own-event button.side-evnt:hover {
-	background: #3f2aa4 !important;
+	background: linear-gradient(to right, #876bd1 30%, #2c18a0 130%);
+	color: #fff;
+	transition-duration: 0.4s;
+	cursor: pointer;
 }
 
 .own-event button.hst-own {

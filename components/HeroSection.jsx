@@ -22,15 +22,15 @@ const HeroSection = () => {
 								by using <b className="text-white">#SingaporeAIWeek</b> on Twitter.
 							</p>
 							<div className="own-evnt-btn d-flex">
-								<a href="https://forms.superai.com/singapore-ai-week-event-submission" target="_blank">
-									<button className="min-w-[239px] side-evnt">HOST YOUR OWN EVENT</button>
+								<a className="w-full cursor-pointer" href="https://forms.superai.com/singapore-ai-week-event-submission" target="_blank">
+									<button className="min-w-[279px] side-evnt">HOST YOUR OWN EVENT</button>
 								</a>
 								<a
-									className="cursor-pointer"
+									className="w-full cursor-pointer"
 									href="https://docs.google.com/spreadsheets/d/15HfYTVsDAixDVG2cgkWamxXIPHL5ATR7NdnKzvnwT18/edit?usp=sharing"
 									target="__blank"
 								>
-									<button id="side-events-btn" className="min-w-[239px] hst-own cursor-pointer side-events-btn">
+									<button id="side-events-btn" className="min-w-[279px] hst-own cursor-pointer side-events-btn">
 										SIDE EVENTS SHEET
 									</button>
 								</a>
