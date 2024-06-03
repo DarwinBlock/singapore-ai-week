@@ -1199,7 +1199,6 @@ body div.webui-popover .arrow {
 }
 .header-left img {
 	max-width: 100%;
-	object-fit: cover;
 }
 header.header .main .navbar-toggler.collapsed .navbar-toggler-icon .fa.fa-bars,
 header.header .main .navbar-toggler .navbar-toggler-icon .fa.fa-close {
