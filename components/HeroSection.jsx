@@ -3,12 +3,12 @@ const HeroSection = () => {
 		<div className="ban-ner">
 			{/* <div className="header-fix-bg"></div> */}
 			<div className="inner-img">
-				<div className="container pt-[105px]">
+				<div className="container pt-[125px]">
 					<div className="inner-text md:pt-0 pt-[3.75rem]">
 						<img src={"/SuperAI-Week-Logo.png"} className="desktop invert" alt="Banner" />
 						<img src={"/SuperAI-Week-Logo-Stacked.png"} className="mobile invert" />
 						<p className="text-white">
-							3 - 9 June 2024 <span className="dxtop">| SINGAPORE</span>
+							3 - 9 June 2025 <span className="dxtop">| SINGAPORE</span>
 						</p>
 						<div className="own-event">
 							<p className="Drinks text-white">
@@ -21,7 +21,7 @@ const HeroSection = () => {
 								<br />
 								by using <b className="text-white">#SingaporeAIWeek</b> on Twitter.
 							</p>
-							<div className="own-evnt-btn d-flex">
+							{/* <div className="own-evnt-btn d-flex">
 								<a className="w-full cursor-pointer" href="https://forms.superai.com/singapore-ai-week-event-submission" target="_blank">
 									<button className="min-w-[279px] side-evnt">HOST YOUR OWN EVENT</button>
 								</a>
@@ -34,7 +34,7 @@ const HeroSection = () => {
 										SIDE EVENTS SHEET
 									</button>
 								</a>
-							</div>
+							</div> */}
 						</div>
 					</div>
 				</div>
