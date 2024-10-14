@@ -10,23 +10,22 @@ import NewsLetter from "@/components/NewsLetter";
 import { useEffect, useState } from "react";
 
 const HomePage = () => {
-    const [selectedDate, setSelectedDate] = useState("alldates")
+	const [selectedDate, setSelectedDate] = useState("alldates");
 
-    return (  
-        <>
-            <Navbar/>
-            <HeroSection/>
-            <div className="t-events">
-                <div className="container c-hack">
-                    <EventsDate selectedDate={selectedDate} setSelectedDate={setSelectedDate}/>
-                    <EventFilters selectedDateFilter={selectedDate}/>
-                </div>
-                <NewsLetter/>
-                <Footer/>
-            </div>
-        </>
-        
-    );
-}
- 
+	return (
+		<>
+			<Navbar />
+			<HeroSection />
+			<div className="t-events">
+				<div className="container c-hack">
+					<EventsDate selectedDate={selectedDate} setSelectedDate={setSelectedDate} />
+					<EventFilters selectedDateFilter={selectedDate} />
+				</div>
+				<NewsLetter />
+				<Footer />
+			</div>
+		</>
+	);
+};
+
 export default HomePage;

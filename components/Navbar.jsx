@@ -107,10 +107,10 @@ const Navbar = () => {
 			submenu.style.display = "none";
 		};
 
-		agenda.addEventListener("mouseenter", handleAgendaMouseEnter);
-		agenda.addEventListener("mouseleave", handleAgendaMouseLeave);
-		agendaSubmenu.addEventListener("mouseenter", handleAgendaSubmenuMouseEnter);
-		agendaSubmenu.addEventListener("mouseleave", handleAgendaSubmenuMouseLeave);
+		// agenda.addEventListener("mouseenter", handleAgendaMouseEnter);
+		// agenda.addEventListener("mouseleave", handleAgendaMouseLeave);
+		// agendaSubmenu.addEventListener("mouseenter", handleAgendaSubmenuMouseEnter);
+		// agendaSubmenu.addEventListener("mouseleave", handleAgendaSubmenuMouseLeave);
 		experience.addEventListener("mouseenter", handleExperienceMouseEnter);
 		experience.addEventListener("mouseleave", handleExperienceMouseLeave);
 		submenu.addEventListener("mouseenter", handleSubmenuMouseEnter);
@@ -118,10 +118,10 @@ const Navbar = () => {
 
 		// Cleanup function to remove event listeners when the component is unmounted
 		return () => {
-			agenda.removeEventListener("mouseenter", handleAgendaMouseEnter);
-			agenda.removeEventListener("mouseleave", handleAgendaMouseLeave);
-			agendaSubmenu.removeEventListener("mouseenter", handleAgendaSubmenuMouseEnter);
-			agendaSubmenu.removeEventListener("mouseleave", handleAgendaSubmenuMouseLeave);
+			// agenda.removeEventListener("mouseenter", handleAgendaMouseEnter);
+			// agenda.removeEventListener("mouseleave", handleAgendaMouseLeave);
+			// agendaSubmenu.removeEventListener("mouseenter", handleAgendaSubmenuMouseEnter);
+			// agendaSubmenu.removeEventListener("mouseleave", handleAgendaSubmenuMouseLeave);
 			experience.removeEventListener("mouseenter", handleExperienceMouseEnter);
 			experience.removeEventListener("mouseleave", handleExperienceMouseLeave);
 			submenu.removeEventListener("mouseenter", handleSubmenuMouseEnter);
@@ -178,9 +178,9 @@ const Navbar = () => {
 										SPEAKERS
 									</a>
 								</li>
-								<li className="nav-item lg:ml-[45px] agenda">
+								{/* <li className="nav-item lg:ml-[45px] agenda">
 									<span class="nav-link">AGENDA</span>
-								</li>
+								</li> */}
 
 								<li className="nav-item lg:ml-[45px]">
 									<a href="https://www.superai.com/partners" className="nav-link">
@@ -220,11 +220,11 @@ const Navbar = () => {
 										</a>
 									</span>
 
-									<span class="nav-item">
+									{/* <span class="nav-item">
 										<a href="https://www.superai.com/agenda" class="nav-link-ham">
 											AGENDA
 										</a>
-									</span>
+									</span> */}
 									<span class="nav-item">
 										<a href="https://www.superai.com/partners" class="nav-link-ham">
 											PARTNERS
@@ -240,11 +240,11 @@ const Navbar = () => {
 											TRAVEL
 										</a>
 									</span>
-									<span class="nav-item">
+									{/* <span class="nav-item">
 										<a href="https://www.superai.com/mobileapp" class="nav-link-ham">
 											MOBILE APP
 										</a>
-									</span>
+									</span> */}
 									<span class="nav-item">
 										<a href="https://sgaiweek.com" class="nav-link-ham">
 											SINGAPORE AI WEEK
@@ -252,7 +252,7 @@ const Navbar = () => {
 									</span>
 									<span class="nav-item">
 										<a href="https://pfp.superai.com" class="nav-link-ham">
-											PFPs
+											I&apos;M ATTENDING
 										</a>
 									</span>
 
@@ -330,14 +330,14 @@ const Navbar = () => {
 					<a href="https://www.superai.com/travel" class="submenu-link">
 						TRAVEL
 					</a>
-					<a href="https://www.superai.com/mobileapp" class="submenu-link">
+					{/* <a href="https://www.superai.com/mobileapp" class="submenu-link">
 						MOBILE APP
-					</a>
+					</a> */}
 					<a href="https://sgaiweek.com" class="submenu-link">
 						SG AI WEEK
 					</a>
 					<a href="https://pfp.superai.com" class="submenu-link pfps">
-						PFPs
+						I&apos;M ATTENDING
 					</a>
 					<a href="https://www.superai.com/about" class="submenu-link">
 						OUR EVENTS

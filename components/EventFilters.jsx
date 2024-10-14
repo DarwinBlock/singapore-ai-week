@@ -10,9 +10,9 @@ const EventFilters = ({ selectedDateFilter }) => {
 	const [eventCardData, setEventCardData] = useState(null);
 
 	useEffect(() => {
-		axios.get("/api/events").then((res) => {
-			setEventCardData(res.data.events);
-		});
+		// axios.get("/api/events").then((res) => {
+		// 	setEventCardData(res.data.events);
+		// });
 	}, [selectedDateFilter]);
 
 	const constructedEventCardArr = useMemo(() => {
@@ -116,7 +116,7 @@ const EventFilters = ({ selectedDateFilter }) => {
 					constructedEventCardArr
 				) : (
 					<div className="nodata no-events">
-						<div className="col-sm-6 col-6 card-style col-md-2">No Data</div>
+						<div className="col-sm-6 col-6 card-style col-md-2">No Events</div>
 					</div>
 				)}
 			</div>
