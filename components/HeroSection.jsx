@@ -21,11 +21,11 @@ const HeroSection = () => {
 								<br />
 								by using <b className="text-white">#SingaporeAIWeek</b> on Twitter.
 							</p>
-							{/* <div className="own-evnt-btn d-flex">
-								<a className="w-full cursor-pointer" href="https://forms.superai.com/singapore-ai-week-event-submission" target="_blank">
+							<div className="own-evnt-btn d-flex">
+								<a className="w-fit cursor-pointer" href="https://forms.superai.com/singapore-ai-week-event-submission" target="_blank">
 									<button className="min-w-[279px] side-evnt">HOST YOUR OWN EVENT</button>
 								</a>
-								<a
+								{/* <a
 									className="w-full cursor-pointer"
 									href="https://docs.google.com/spreadsheets/d/15HfYTVsDAixDVG2cgkWamxXIPHL5ATR7NdnKzvnwT18/edit?usp=sharing"
 									target="__blank"
@@ -33,8 +33,8 @@ const HeroSection = () => {
 									<button id="side-events-btn" className="min-w-[279px] hst-own cursor-pointer side-events-btn">
 										SIDE EVENTS SHEET
 									</button>
-								</a>
-							</div> */}
+								</a> */}
+							</div>
 						</div>
 					</div>
 				</div>
