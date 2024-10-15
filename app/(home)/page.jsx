@@ -17,10 +17,10 @@ const HomePage = () => {
 			<Navbar />
 			<HeroSection />
 			<div className="t-events">
-				<div className="container c-hack">
+				{/* <div className="container c-hack">
 					<EventsDate selectedDate={selectedDate} setSelectedDate={setSelectedDate} />
 					<EventFilters selectedDateFilter={selectedDate} />
-				</div>
+				</div> */}
 				<NewsLetter />
 				<Footer />
 			</div>

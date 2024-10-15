@@ -308,7 +308,8 @@ div.t-events_in .e-hack .e-divs div#name-div ul li div .chain-img {
 	background-position: 122px 0px;
 	height: 225px;
 	align-items: flex-start;
-	margin: 100px 0px 0px;
+	/* margin: 100px 0px 0px; */
+	margin: 0px 0px 0px;
 	background-size: 385px 222px;
 }
 
@@ -1793,7 +1794,8 @@ footer.bg .container-lg {
 		min-width: 70px;
 	}
 	div.alldata .subs.row {
-		margin-top: 75px;
+		/* margin-top: 75px; */
+		margin-top: 0px;
 		background-size: 330px 190px;
 		height: 192px;
 		background-position: 5px 0px;
@@ -1933,7 +1935,8 @@ footer.bg .container-lg {
 		max-width: 60%;
 	}
 	div.alldata .subs.row {
-		margin-top: 75px;
+		/* margin-top: 75px; */
+		margin-top: 0px;
 		background-size: 330px 190px;
 		height: 192px;
 		background-position: 30px 0px;
@@ -2173,7 +2176,8 @@ footer.bg .container-lg {
 		max-width: 75%;
 	}
 	div.alldata .subs.row {
-		margin-top: 75px;
+		/* margin-top: 75px; */
+		margin-top: 0px;
 		background-size: 280px 190px;
 		height: 192px;
 		background-position: 20px 0px;
@@ -2558,7 +2562,8 @@ header.header .main .navbar-toggler {
 		background: transparent;
 		height: auto;
 		padding-bottom: 35px;
-		margin-top: 50px;
+		/* margin-top: 50px; */
+		margin-top: 0px;
 	}
 	div.filter-btb div#all-buttons button:first-child {
 		margin-left: auto !important;
