@@ -8,7 +8,7 @@ const HeroSection = () => {
 						<img src={"/SuperAI-Week-Logo.png"} className="desktop invert" alt="Banner" />
 						<img src={"/SuperAI-Week-Logo-Stacked.png"} className="mobile invert" />
 						<p className="text-white">
-							3 - 9 June 2025 <span className="dxtop">| SINGAPORE</span>
+							16 - 22 June 2025 <span className="dxtop">| SINGAPORE</span>
 						</p>
 						<div className="own-event">
 							<p className="Drinks text-white">
