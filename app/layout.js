@@ -2,7 +2,7 @@ import "./globals.css";
 import "bootstrap/dist/css/bootstrap.css";
 
 export const metadata = {
-	title: "SuperAI | 3-9 June 2025 | Singapore",
+	title: "SuperAI | 16-22 June 2025 | Singapore",
 	description:
 		"Singapore AI Week is the year's widest range of meetups, workshops, hackathons networking drinks and parties with SuperAI being the flagship event of the week – creating unparalleled networking opportunities.",
 };
