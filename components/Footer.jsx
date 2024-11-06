@@ -6,14 +6,21 @@ const Footer = () => {
 					<div className="flex lg:justify-normal justify-between">
 						<div className="flex flex-col items-between h-full justify-between">
 							<a className="lg:block hidden" href="https://www.superai.com/">
-								<img className="lg:block hidden" width={300} src="/superai_footer.png" alt="SuperAI" />
+								<img className="lg:block hidden" width={300} src="/superai_footer.webp" alt="SuperAI" />
 							</a>
-							<img
-								className="lg:block hidden lg:self-start lg:mt-auto -ml-4"
-								width={200}
-								src="/Singapore_Tourism_Board_logo.webp"
-								alt="SuperAI"
-							/>
+
+							<div className="lg:block hidden flex mt-16 text-white justify-center items-center">
+								<div className="grid grid-cols-2 items-center gap-2">
+									<div className="text-center text-sm">HELD IN</div>
+									<div className="text-center text-sm">SUPPORTED BY</div>
+									<div className="flex text-sm text-center justify-center items-center">
+										<img className="" width={135} src="/SGlogo.webp" alt="SuperAI" />
+									</div>
+									<div className="w-full flex text-sm text-center justify-center items-center">
+										<img className="self-center" width={80} src="/SECB.webp" alt="SuperAI" />
+									</div>
+								</div>
+							</div>
 						</div>
 						<div className="flex flex-col md:text-base text-sm font-lassrietL space-y-[8px] lg:ml-16">
 							<a href="https://www.superai.com/speakers" target="blank" className="uppercase no-underline textWhite text-[18px] font-extralight">
@@ -69,6 +76,10 @@ const Footer = () => {
 								<i className="text-[32px] text-center text-white fa-brands fa-linkedin-in"></i>
 							</a>
 
+							<a href="https://www.instagram.com/superai_conf" target="blank">
+								<i className="text-white text-[32px] fa-brands fa-instagram"></i>
+							</a>
+
 							<a href="https://www.youtube.com/@superai_conf" target="blank">
 								<i className="text-white text-[32px] fa-brands fa-youtube"></i>
 							</a>
@@ -93,14 +104,20 @@ const Footer = () => {
 						</div>
 
 						<a className="lg:hidden block justify-center w-full flex flex-col" href="https://www.superai.com/">
-							<img className="lg:hidden block lg:mt-0 mt-6 self-center" width={220} src="/superai_footer.png" alt="SuperAI" />
+							<img className="lg:hidden block lg:mt-0 mt-6 self-center" width={220} src="/superai_footer.webp" alt="SuperAI" />
 
-							<img
-								className="lg:hidden block self-center lg:mt-auto -ml-4 mt-4"
-								width={200}
-								src="/Singapore_Tourism_Board_logo.webp"
-								alt="SuperAI"
-							/>
+							<div className="lg:hidden block flex mt-6 text-white justify-center items-center">
+								<div className="grid grid-cols-2 items-center gap-2">
+									<div className="text-center text-sm">HELD IN</div>
+									<div className="text-center text-sm">SUPPORTED BY</div>
+									<div className="flex text-sm text-center justify-center items-center">
+										<img className="" width={135} src="/SGlogo.webp" alt="SuperAI" />
+									</div>
+									<div className="w-full flex text-sm text-center justify-center items-center">
+										<img className="self-center" width={80} src="/SECB.webp" alt="SuperAI" />
+									</div>
+								</div>
+							</div>
 						</a>
 
 						<div className="space-x-5 lg:self-center lg:mt-16 mt-6 lg:flex hidden">
@@ -112,6 +129,10 @@ const Footer = () => {
 
 							<a href="https://www.linkedin.com/company/superai-conference/" target="blank">
 								<i className="text-[32px] text-center text-white fa-brands fa-linkedin-in"></i>
+							</a>
+
+							<a href="https://www.instagram.com/superai_conf" target="blank">
+								<i className="text-white text-[32px] fa-brands fa-instagram"></i>
 							</a>
 
 							<a href="https://www.youtube.com/@superai_conf" target="blank">
