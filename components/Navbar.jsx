@@ -86,7 +86,7 @@ const Navbar = () => {
 
 		const handleExperienceMouseEnter = () => {
 			submenu.style.display = "flex";
-			submenu.style.gap = "120px";
+			submenu.style.gap = "170px";
 			submenu.style.justifyContent = "center";
 			submenu.style.width = "100vw";
 			submenu.style.marginTop = "-30px";
@@ -130,7 +130,7 @@ const Navbar = () => {
 	}, []);
 
 	return (
-		<header className="header navbar-expand-lg" tw="exclude">
+		<header className="header navbar-expand-lg navbar-font" tw="exclude">
 			<div className="t-global p-0">
 				{/* <div className="container-lg">
         <a href="http://www.token2049.com/"><span className="arrow">← </span>TOKEN2049 GLOBAL</a>
@@ -174,7 +174,7 @@ const Navbar = () => {
 									</a>
 								</li> */}
 								<li className="nav-item">
-									<a href="https://www.superai.com/speakers" className="nav-link">
+									<a href="https://www.superai.com/speakers" className="nav-link font-normal">
 										SPEAKERS
 									</a>
 								</li>
@@ -183,17 +183,22 @@ const Navbar = () => {
 								</li> */}
 
 								<li className="nav-item lg:ml-[45px]">
-									<a href="https://www.superai.com/partners" className="nav-link">
+									<a href="https://www.superai.com/partners" className="nav-link font-normal">
 										PARTNERS
 									</a>
 								</li>
 								<li className="nav-item lg:ml-[45px]">
-									<a href="https://www.superai.com/genesis" className="nav-link whitespace-nowrap">
-										STARTUP COMPETITION
+									<a href="https://www.superai.com/genesis" className="nav-link whitespace-nowrap font-normal">
+										GENESIS
 									</a>
 								</li>
 								<li className="nav-item lg:ml-[45px] experience">
-									<span class="nav-link">EXPERIENCE</span>
+									<span class="nav-link font-normal">EXPERIENCE</span>
+								</li>
+								<li className="nav-item lg:ml-[45px]">
+									<a href="https://www.superai.com/2024-report" className="nav-link whitespace-nowrap font-normal">
+										2024 REPORT
+									</a>
 								</li>
 
 								<li className="nav-item lg:ml-[45px]">{/* <a href="https://www.superai.com/travel" className="nav-link">SIDE EVENTS</a> */}</li>
@@ -327,20 +332,20 @@ const Navbar = () => {
 
 			<div className="p-1 bg-transparent">
 				<div class="submenu">
-					<a href="https://www.superai.com/travel" class="submenu-link">
-						TRAVEL
+					<a href="https://www.superai.com/students" class="submenu-link">
+						STUDENTS
 					</a>
 					{/* <a href="https://www.superai.com/mobileapp" class="submenu-link">
 						MOBILE APP
 					</a> */}
-					<a href="https://sgaiweek.com" class="submenu-link">
-						SG AI WEEK
-					</a>
-					<a href="https://pfp.superai.com" class="submenu-link pfps">
+					<a href="https://attending.superai.com" class="submenu-link pfps">
 						I&apos;M ATTENDING
 					</a>
-					<a href="https://www.superai.com/about" class="submenu-link">
-						OUR EVENTS
+					<a href="https://www.superai.com/travel" class="submenu-link">
+						TRAVEL
+					</a>
+					<a href="https://sgaiweek.com" class="submenu-link">
+						SG AI WEEK
 					</a>
 				</div>
 			</div>

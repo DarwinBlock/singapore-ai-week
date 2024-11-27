@@ -546,12 +546,13 @@ font-family: 'OpenSauceSansBold';} */
 header.header ul li a {
 	text-decoration: none;
 	color: initial;
-	font-size: 17px;
-	font-family: "LarssietLight", sans-serif; /* font-weight: 700;*/
-	font-weight: 600;
+	font-size: 15px;
+	font-family: "Larssiet", sans-serif; /* font-weight: 700;*/
+	font-weight: 400;
 	color: #333333;
 	padding: 2px 0px 0px 0px;
 	min-width: 21.6px;
+	letter-spacing: 0.04em !important;
 }
 header.header ul {
 	display: flex;
@@ -4889,6 +4890,27 @@ button.tooltip-button:active {
 	}
 }
 
+@font-face {
+	font-family: "LarssietLight";
+	src: url("/fonts/Larsseit-Light.otf") format("opentype");
+}
+@font-face {
+	font-family: "LarssietMedium";
+	src: url("/fonts/Larsseit-Medium.otf") format("opentype");
+}
+@font-face {
+	font-family: "LarssietBold";
+	src: url("/fonts/Larsseit-Bold.otf") format("opentype");
+}
+@font-face {
+	font-family: "Larssiet";
+	src: url("/fonts/Larsseit.otf") format("opentype");
+}
+
+.navbar-font {
+	font-family: "Larssiet", sans-serif;
+}
+
 .experience {
 	position: static;
 }
@@ -4897,7 +4919,7 @@ button.tooltip-button:active {
 	gap: 40px;
 	justify-content: center;
 	width: 100vw;
-	margin-top: -30px;
+	margin-top: -31px;
 }
 .submenu {
 	z-index: 100;
@@ -4910,11 +4932,16 @@ button.tooltip-button:active {
 	left: 0;
 	right: 0;
 	margin-top: -10px !important;
+	gap: 450px;
 }
 .submenu-link {
 	color: #fff;
 	text-decoration: none;
 	margin-bottom: 5px;
+	font-weight: 400;
+	font-family: "Larssiet", sans-serif;
+	font-size: 15px;
+	letter-spacing: 0.04em !important;
 }
 .submenu-link:hover {
 	color: #8072d6;
